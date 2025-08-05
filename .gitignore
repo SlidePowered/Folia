@@ -6,11 +6,13 @@ build
 
 /run
 
-/folia-server/build.gradle.kts
-/folia-server/src/minecraft
+/stateless-server/build.gradle.kts
+/stateless-server/src/minecraft
 /paper-server
-/folia-api/build.gradle.kts
+/stateless-api/build.gradle.kts
 /paper-api
 /paper-api-generator
 
 .idea/
+
+.DS_Store

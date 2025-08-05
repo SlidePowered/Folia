@@ -13,18 +13,18 @@ paperweight {
 
         patchFile {
             path = "paper-server/build.gradle.kts"
-            outputFile = file("folia-server/build.gradle.kts")
-            patchFile = file("folia-server/build.gradle.kts.patch")
+            outputFile = file("stateless-server/build.gradle.kts")
+            patchFile = file("stateless-server/build.gradle.kts.patch")
         }
         patchFile {
             path = "paper-api/build.gradle.kts"
-            outputFile = file("folia-api/build.gradle.kts")
-            patchFile = file("folia-api/build.gradle.kts.patch")
+            outputFile = file("stateless-api/build.gradle.kts")
+            patchFile = file("stateless-api/build.gradle.kts.patch")
         }
         patchDir("paperApi") {
             upstreamPath = "paper-api"
             excludes = setOf("build.gradle.kts")
-            patchesDir = file("folia-api/paper-patches")
+            patchesDir = file("stateless-api/paper-patches")
             outputDir = file("paper-api")
         }
     }

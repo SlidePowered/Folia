@@ -10,7 +10,7 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
 }
 
-rootProject.name = "folia"
+rootProject.name = "stateless"
 
-include("folia-api")
-include("folia-server")
+include("stateless-api")
+include("stateless-server")
